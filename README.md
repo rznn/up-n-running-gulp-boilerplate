@@ -96,4 +96,4 @@ If you run into any issues whatsoever, do let me know.
 This is my first github contribution made as a *HUGE* **thanks to the community**. I expect some things to not be perfect.
   
 ##License
-This boilerplate is licensed under MIT. For more details, please see [LICENSE.txt](https://github.com/rznn/up-n-running-gulp-boilerplate/license.txt).
+This boilerplate is licensed under MIT. For more details, please see LICENSE.txt.
