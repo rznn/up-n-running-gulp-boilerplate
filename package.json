@@ -4,13 +4,12 @@
   "author": "Razvan Negrea",
   "license": "ISC",
   "private": true,
-  "description": "Simple gulp boilerplate for front-end developers and designers to help in kickstarting projects. This boilerplate features a standard directory structure and the following tasks: a webserver, watching and compilling Sass into CSS, linting JS code, browser synchronization (commonly referred to as live reload), file minification, concatenation and image optimization.",
+  "description": "Simple gulp boilerplate for front-end developers and designers to help in kickstarting projects. This boilerplate features a standard directory structure and the following tasks: watching and compilling Sass into CSS, linting JS code, browser synchronization (commonly referred to as live reload), file minification, concatenation and image optimization.",
   "main": "index.js",
   "keywords": [
     "up-n-running",
     "running",
     "gulp",
-    "webserver",
     "sass",
     "js-hint",
     "plumber",
@@ -42,7 +41,6 @@
     "gulp-sourcemaps": "^2.4.1",
     "gulp-uglify": "^2.1.0",
     "gulp-util": "^3.0.8",
-    "gulp-webserver": "^0.9.1",
     "jshint": "^2.9.4",
     "yargs": "^7.0.2"
   }

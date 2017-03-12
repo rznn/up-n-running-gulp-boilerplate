@@ -5,9 +5,6 @@
 // Include Gulp
 var gulp = require('gulp'); 
 
-// Require webserver
-var webserver = require('gulp-webserver');
-
 // Error handling
 var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
@@ -45,16 +42,6 @@ var size = require('gulp-size');
 // -------------------------------------------------------------------------
 // TASKS
 // -------------------------------------------------------------------------
-
-// Start webserver
-gulp.task('webserver', function() {
-  gulp.src('public')
-    .pipe(webserver({
-      livereload: false, // We use Browser Sync, the super-charged brother of Live Reload
-      directoryListing: true,
-      open: true
-    }));
-});
 
 // Create a welcome task and just log a message
 gulp.task('welcome', function() {
@@ -159,4 +146,4 @@ gulp.task('browser-sync', function() {
 });
 
 // Default Task
-gulp.task('default', ['webserver', 'welcome', 'html', 'css', 'sass', 'lint', 'scripts', 'images', 'watch', 'browser-sync'], reload);
+gulp.task('default', ['welcome', 'html', 'css', 'sass', 'lint', 'scripts', 'images', 'watch', 'browser-sync'], reload);

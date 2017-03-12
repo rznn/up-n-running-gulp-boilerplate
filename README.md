@@ -4,10 +4,10 @@
 
 Hello! If you are a **front-end developer** looking to get your project started in a matter of minutes, take a look ahead.
 
-As the name suggests, this boilerplate requires minimum to no additional configuration and features all the essentials you will ever need for a simple project: **a webserver**, **SASS**, **bourbon/neat** (the light-weight alternative to Compass), **JS-hint**, **plumber**, **sourcemaps**, **browser-sync** and more.
+As the name suggests, this boilerplate requires minimum to no additional configuration and features all the essentials you will ever need for a simple project: **SASS**, **bourbon/neat** (the light-weight alternative to Compass), **JS-hint**, **plumber**, **sourcemaps**, **browser-sync** and more.
 
 * [Installing](#installing)
-* [Webserver and Browser-Sync](#webserver-and-browser-sync)
+* [Browser-Sync](#browser-sync)
 * [Structure](#structure)
   * [Packages](#packages)
   * [Folder structure](#folder-structure)
@@ -29,8 +29,8 @@ As the name suggests, this boilerplate requires minimum to no additional configu
 ???. Have fun!
 ```
 
-##Webserver and Browser-Sync
-To start the webserver, simply go to your project directory and run "gulp". The server's default address is http://localhost:3000/.
+##Browser-Sync
+To start a local server, simply fire up a terminal in your local project's folder and run "gulp". The server's default address is http://localhost:3000/.
 
 For debugging via Browser-Sync, go to http://localhost:3001/.
 
