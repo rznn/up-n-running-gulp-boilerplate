@@ -1,3 +1,6 @@
+# Dist files
+public/
+
 # Node stuff
 node_modules/
 
