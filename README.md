@@ -15,8 +15,6 @@ As the name suggests, this boilerplate requires minimum to no additional configu
 * [Problems](#problems)
 * [License](#license)
 
-Projects based on this boilerplate: http://rznart.com/work/loremip-uni/
-
 ##Installing
 ```
 1. Clone the repo
@@ -43,8 +41,6 @@ For debugging via Browser-Sync, go to http://localhost:3001/.
   * [gulp](https://github.com/gulpjs/gulp)
 * CSS/SASS
   * [sass](https://github.com/sass/sass)
-  * [bourbon](https://github.com/thoughtbot/bourbon)
-  * [neat](https://github.com/thoughtbot/neat)
   * [autoprefixer](https://github.com/postcss/autoprefixer)
   * [minify-css](https://github.com/murphydanger/gulp-minify-css)
 * Javascript

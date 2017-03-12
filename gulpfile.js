@@ -31,7 +31,6 @@ var reload = browserSync.reload;
 
 // CSS plugins
 var sass = require('gulp-sass');
-var neat = require('node-neat');
 var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-minify-css');
 
@@ -83,9 +82,7 @@ gulp.task('sass', function() {
     return gulp.src('source/sass/**/*.*')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sourcemaps.init())  // Process the original sources
-            .pipe(sass({
-                includePaths: require('node-neat').includePaths.concat(neat)
-            }))
+            .pipe(sass({ includePaths: 'source/sass/**/*.*' }))
             .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
             
             //only uglify if gulp is ran with '--production'
