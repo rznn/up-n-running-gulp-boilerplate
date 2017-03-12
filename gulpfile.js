@@ -32,7 +32,7 @@ var reload = browserSync.reload;
 // CSS plugins
 var sass = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
-var minifycss = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 
 // JS plugins
 var jshint = require('gulp-jshint');
@@ -83,10 +83,15 @@ gulp.task('sass', function() {
         .pipe(plumber(plumberErrorHandler))
         .pipe(sourcemaps.init())  // Process the original sources
             .pipe(sass({ includePaths: 'source/sass/**/*.*' }))
-            .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1'))
-            
+            .pipe(autoprefixer({ 'browserlist' : [
+                     '> 1%',
+                     'last 2 versions',
+                     'Firefox ESR',
+                     'ie >= 10'
+                 ]
+            }))
             //only uglify if gulp is ran with '--production'
-            .pipe(gulpif(argv.production, minifycss({keepSpecialComments: 0})))
+            .pipe(gulpif(argv.production, cleanCSS()))
             .pipe(gulpif(argv.production, rename({suffix: '.min'})))
 
         .pipe(sourcemaps.write()) // Add the map to modified source.
