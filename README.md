@@ -65,19 +65,27 @@ For debugging via Browser-Sync, go to http://localhost:3001/.
   |++ public
       |++ assets
           |++ css
+              |-- style.css
           |++ images
           |++ js
+              |-- scripts.js
+          |-- index.html
   |++ source
-      |-- index.html
       |++ assets
           |++ css
-              |-- normalize.css
           |++ images
           |++ js
-              |-- functions.js
+              |++ lib
+              |++ vendor
+              |-- main.js
           |++ sass
-              |-- main.scss
+              |++ base
+              |++ helpers
+              |++ layout
+              |++ lib
+              |++ modules
               |-- style.scss
+      |-- index.html
   |-- gulpfile.js
   |-- LICENSE.txt
   |-- package.json
