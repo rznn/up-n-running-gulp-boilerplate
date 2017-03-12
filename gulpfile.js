@@ -108,10 +108,14 @@ gulp.task('lint', function() {
 });
 
 gulp.task('scripts', function() {
-    return gulp.src('source/js/**/*.js')
+    return gulp.src([
+            'source/js/vendor/*.js',
+            'source/js/lib/*.js',
+            'source/js/main.js'
+        ])
         .pipe(plumber(plumberErrorHandler))
         .pipe(sourcemaps.init())
-            .pipe(concat('all.js'))
+            .pipe(concat('scripts.js'))
 
             //only uglify if gulp is ran with '--production'
             .pipe(gulpif(argv.production, uglify()))
