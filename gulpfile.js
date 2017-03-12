@@ -79,10 +79,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('sass', function() {
-    return gulp.src('source/sass/**/*.*')
+    return gulp.src('source/sass/style.scss')
         .pipe(plumber(plumberErrorHandler))
         .pipe(sourcemaps.init())  // Process the original sources
-            .pipe(sass({ includePaths: 'source/sass/**/*.*' }))
+            .pipe(sass({ includePaths: ['source/sass/'] }))
             .pipe(autoprefixer({ 'browserlist' : [
                      '> 1%',
                      'last 2 versions',
@@ -95,6 +95,7 @@ gulp.task('sass', function() {
             .pipe(gulpif(argv.production, rename({suffix: '.min'})))
 
         .pipe(sourcemaps.write()) // Add the map to modified source.
+        .pipe(rename({ extname: '.css' }))
         .pipe(gulp.dest('public/assets/css'));
 });
 

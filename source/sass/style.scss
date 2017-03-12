@@ -1,3 +1,14 @@
-body {
+/**
+ * IMPORTS
+ *******************************************/
 
-}
+// Add your partials here
+
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+@import "base/icon-font";
+@import "base/text-highlight";
+
+@import "modules/main";

@@ -1,0 +1,82 @@
+
+/* Use clearfix class on parent to clear nested columns,
+or wrap each row of columns in a <div class="row"> */
+
+.clearfix {
+
+	@include clearfix;
+	
+}
+
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+
+	display: block;
+	clear: both;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+
+}
+
+
+/* #Site wide Box-Sizing
+================================================== */
+
+*{
+
+	&,
+	&:before,
+	&:after {
+
+		box-sizing: border-box;
+
+	}
+
+}
+
+
+/* #Global Font Optimisation
+================================================== */
+
+*{
+
+	&,
+	&:before,
+	&:after {
+
+	  -moz-osx-font-smoothing: grayscale;
+	  -webkit-font-smoothing: antialiased;
+	  font-smoothing: antialiased;
+	  text-rendering: optimizeLegibility;
+
+	}
+
+}
+
+
+/* #Remove default margins
+================================================== */
+
+html,
+body {
+
+	/* 
+	 * Setting a minimum height of 100vh forces a vertical scrollbar
+	 * so that the content doesn't get pushed before the page height is fully determined
+	 */
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+
+}
+
+/* #Miscellaneous
+================================================== */
+
+img {
+
+	max-width: 100%;
+
+}

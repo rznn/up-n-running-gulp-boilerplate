@@ -1,0 +1,37 @@
+/**
+ * Typography
+ *******************************************/
+
+// important to define 62.5% for [rem] font conversion
+html {
+
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 62.5%;
+    -ms-text-size-adjust: 62.5%;
+
+}
+
+body {
+
+    color: $accent-5;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: $primaryFont;
+
+}
+
+p {
+
+    font-family: $secondaryFont;
+    font-size: 1.5em;
+    line-height: 1.5;
+
+}
