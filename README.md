@@ -15,7 +15,7 @@ As the name suggests, this boilerplate requires minimum to no additional configu
 * [Problems](#problems)
 * [License](#license)
 
-##Installing
+## Installing
 ```
 1. Clone the repo
         git clone https://github.com/rznn/up-n-running-gulp-boilerplate.git
@@ -29,14 +29,14 @@ As the name suggests, this boilerplate requires minimum to no additional configu
 ???. Have fun!
 ```
 
-##Browser-Sync
+## Browser-Sync
 To start a local server, simply fire up a terminal in your local project's folder and run "gulp". The server's default address is http://localhost:3000/.
 
 For debugging via Browser-Sync, go to http://localhost:3001/.
 
-##Structure
+## Structure
 
-###Packages
+### Packages
 * Gulp
   * [gulp](https://github.com/gulpjs/gulp)
 * CSS/SASS
@@ -58,7 +58,7 @@ For debugging via Browser-Sync, go to http://localhost:3001/.
   * [util](https://github.com/gulpjs/gulp-util)
   * [yargs](https://github.com/bcoe/yargs)
 
-###Folder Structure
+### Folder Structure
 ---
 
   ```
@@ -91,13 +91,13 @@ For debugging via Browser-Sync, go to http://localhost:3001/.
   |-- package.json
   |-- README.md
   ```
-##FAQ
+## FAQ
 1. **Why Gulp and not Grunt?** - Simple. Because it's faster, way faster. Compilling and launching a browser reload/inject in Grunt ends up taking even 8s in a big project, with Gulp you'll probably end up with a max of 200ms. That, and a personal preference for the more intuitive way in which you configure Gulp.
 
-##Problems
+## Problems
 If you run into any issues whatsoever, do let me know.
 
 This is my first github contribution made as a *HUGE* **thanks to the community**. I expect some things to not be perfect.
   
-##License
+## License
 This boilerplate is licensed under MIT. For more details, please see LICENSE.txt.
